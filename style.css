@@ -161,6 +161,57 @@ header h1 {
 ::-webkit-scrollbar-track { background: #000; }
 ::-webkit-scrollbar-thumb { background: var(--primary-color); }
 
+.social-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.6rem;
+    transition: 0.3s;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+
+.footer-social {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+}
+
+footer p {
+    color: #555;
+    font-size: 0.8rem;
+}
+
 footer {
     text-align: center;
     padding: 60px 20px;
