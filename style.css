@@ -10,6 +10,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Athiti', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 body {
@@ -92,6 +94,10 @@ header h1 {
     background: #252525;
 }
 
+.video-header:active {
+    background: #333;
+}
+
 .video-title {
     font-size: 1.3rem;
     font-weight: 500;
@@ -157,6 +163,10 @@ header h1 {
     transform: scale(1.05);
 }
 
+.download-btn:active {
+    transform: scale(0.95);
+}
+
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #000; }
 ::-webkit-scrollbar-thumb { background: var(--primary-color); }
@@ -184,9 +194,12 @@ header h1 {
 
 footer {
     text-align: center;
-    padding: 40px 20px;
-    margin-top: 40px;
-    border-top: 1px solid #333;
+    padding: 60px 20px;
+    border-top: 1px solid #222;
+    margin-top: 50px;
+    color: #555;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
 .footer-social {
@@ -210,14 +223,4 @@ footer {
 footer p {
     color: #555;
     font-size: 0.8rem;
-}
-
-footer {
-    text-align: center;
-    padding: 60px 20px;
-    border-top: 1px solid #222;
-    margin-top: 50px;
-    color: #555;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
 }
